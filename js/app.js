@@ -66,14 +66,13 @@ class MapManager {
     }
 
     initializeMap() {
-        // TODO: Implement map integration (Google Maps or OpenStreetMap)
-        if (this.mapContainer) {
-            this.mapContainer.innerHTML = '<div class="map-placeholder">Map Loading...</div>';
-        }
+        // The map is already initialized via iframe in HTML
+        console.log('Map is ready');
     }
 
     addCleanupLocation(location) {
-        // TODO: Add markers for cleanup locations
+        // Location updates should be done by updating the iframe src
+        console.log('New cleanup location:', location);
     }
 }
 
